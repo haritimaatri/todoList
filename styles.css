@@ -1,0 +1,70 @@
+body, html{
+    background-image: url('to do list pic.jpeg') ;
+    background-size: 40cm;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .todoList{
+    background: #9a773f;
+    border:10px#31aecd;
+    border-radius: 11px;
+    padding: 3px 7px 11px 7px;
+    max-height: 300vh;
+    width: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .todoList > div:first-child{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .todoList > div:first-child > *{
+    border-radius: 5px;
+    padding: 9px;
+    border: 2px solid #5f30d4;
+    margin: 3px;
+  }
+  .todoList > div:first-child > button{
+    background: #47035e;
+    border: none;
+    cursor: pointer;
+  }
+  .todoList > div:first-child > button:hover{
+    background: #e74c3c;
+    border: none;
+  }
+  .todoList > div:first-child > button:active{
+    background: #c0392b;
+    border: none;
+  }
+  .todoList> div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+  }
+  .todoList > div:last-child > div{
+    border: 1px solid rgb(233, 228, 228);
+    margin: 0;
+    padding: 0 3px 0 15px;
+    background: #ecf0f1;
+    word-break: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .todoList > div:last-child > div > div > button{
+    border: none;
+    padding: 15px;
+    margin: 0;
+    border-radius: 50%;
+  }
